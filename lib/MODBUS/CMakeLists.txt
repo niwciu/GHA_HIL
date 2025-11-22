@@ -4,7 +4,6 @@ set (LIB_INTERNALL_INC
   ${CMAKE_CURRENT_SOURCE_DIR}
   ${CMAKE_CURRENT_SOURCE_DIR}/common
   ${CMAKE_CURRENT_SOURCE_DIR}/slave_internall
-  ${CMAKE_CURRENT_SOURCE_DIR}/master_internall
   )
 
 add_library(modbus_lib STATIC

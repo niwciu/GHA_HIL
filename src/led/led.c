@@ -3,6 +3,7 @@
 */
 #include "led.h"
 #include "led_driver_interface.h"
+#include <stdbool.h>
 
 void init_led(void)
 {
@@ -18,4 +19,9 @@ void enable_led(void)
 void disable_led(void)
 {
     set_LED_gpio_low();
+}
+
+bool get_curent_LED_state(void)
+{
+    return is_LED_gpio_high();
 }

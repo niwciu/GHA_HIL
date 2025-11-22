@@ -50,6 +50,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
     ${CMAKE_CURRENT_SOURCE_DIR}/../../src/main_app.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../src/led/led.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../src/modbus_slave/modbus_slave_manager.c
 
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/driver_interfaces/pushbutton_GPIO_interface.c
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/driver_interfaces/led_driver_interface.c
@@ -61,6 +62,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
     ${CMAKE_CURRENT_SOURCE_DIR}/../../src
     ${CMAKE_CURRENT_SOURCE_DIR}/../../src/led
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../src/modbus_slave
 )
 
 # Add project symbols (macros)

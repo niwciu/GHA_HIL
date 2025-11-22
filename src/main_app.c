@@ -9,9 +9,9 @@
  * 
  */
 #include "main_app.h"
-#include "../lib/PUSHBUTTON/pushbutton.h"
-#include "led/led.h"
-
+#include "pushbutton.h"
+#include "led.h"
+#include "modbus_slave_manager.h"
 
 PUSHBUTTON_TypDef use_button;
 PUSHBUTTON_TypDef *USER_BUTTON= &use_button;
@@ -26,7 +26,10 @@ static void init_peripherals(void);
 
     while(1)
     {
+        
         check_pushbutton(USER_BUTTON);
+
+        modbus_slave_manager_update();
 
     }
  }
@@ -39,4 +42,7 @@ static void init_peripherals(void);
     init_pushbutton(USER_BUTTON, REPETITION_OFF, TRIGGER_ON_SHORT_PUSH_AND_LONG_PUSH, pushbutton_UP_GPIO_interface_get);
     register_button_short_push_long_push_callbacks(USER_BUTTON,disable_led,enable_led);
 
+    modbus_slave_manager_init();
+
  }
+

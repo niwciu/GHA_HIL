@@ -35,3 +35,15 @@ void toggle_LED_gpio(void)
     HAL_GPIO_TogglePin(LED_GREEN_GPIO_Port, LED_GREEN_Pin);
 }
 
+bool is_LED_gpio_high(void)
+{
+    GPIO_PinState pin_state = HAL_GPIO_ReadPin(LED_GREEN_GPIO_Port, LED_GREEN_Pin);
+    if (pin_state == GPIO_PIN_SET)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
