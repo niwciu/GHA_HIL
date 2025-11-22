@@ -53,6 +53,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/driver_interfaces/pushbutton_GPIO_interface.c
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/driver_interfaces/led_driver_interface.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/Core/driver_interfaces/modbus_slave_driver_interface.c
 )
 
 # Add include paths
