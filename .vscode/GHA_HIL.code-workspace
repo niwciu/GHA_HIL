@@ -5,6 +5,12 @@
 		},
 		{
 			"path": "../hw/NUCLEO_G071RB"
+		},
+		{
+			"path": "../src"
+		},
+		{
+			"path": "../lib"
 		}
 	],
 	"settings": {

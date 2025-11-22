@@ -5,6 +5,8 @@ Build/
 build/
 reports/
 
+.cache/
+
 ToDo.txt
 
 .venv/

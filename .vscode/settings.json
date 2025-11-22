@@ -71,5 +71,10 @@
   "cmake.preferredGenerators": [
     "Ninja"
   ],
-  "stm32cube-ide-clangd.path": "cube"
+  "stm32cube-ide-clangd.path": "cube",
+
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "C_Cpp.default.compileCommands": "${workspaceFolder}/hw/NUCLEO_G071RB/build/Debug/compile_commands.json"
+
+
 }
