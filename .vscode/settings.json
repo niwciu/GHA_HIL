@@ -63,5 +63,13 @@
     "signal.h": "c"
   },
   "C_Cpp.errorSquiggles": "disabled",
-  "cmake.sourceDirectory": "D:/EMBEDDED/PROJECT_TEMPLATES/Embeded_Project_Template/hw/ATMEGA328P_ARDUINO_UNO_R3"
+  "cmake.sourceDirectory": "/home/niwciu/EMBEDDED/11_myEMBEDDEDway/2_GithubActions video tutorials/GHA_HIL/hw/NUCLEO_G071RB/cmake/stm32cubemx",
+  "cmake.cmakePath": "cube-cmake",
+  "cmake.configureArgs": [
+    "-DCMAKE_COMMAND=cube-cmake"
+  ],
+  "cmake.preferredGenerators": [
+    "Ninja"
+  ],
+  "stm32cube-ide-clangd.path": "cube"
 }
