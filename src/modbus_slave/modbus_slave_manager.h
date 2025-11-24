@@ -14,8 +14,8 @@
 extern "C" {
 #endif  
 
-void modbus_slave_manager_init();
-void modbus_slave_manager_update();
+void modbus_slave_manager_init(void);
+void modbus_slave_manager_update(void);
 
 #ifdef __cplusplus
 }

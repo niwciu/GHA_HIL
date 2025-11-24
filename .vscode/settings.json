@@ -60,7 +60,8 @@
     "stat.h": "c",
     "crtdefs.h": "c",
     "time.h": "c",
-    "signal.h": "c"
+    "signal.h": "c",
+    "modbus_slave.h": "c"
   },
   "C_Cpp.errorSquiggles": "disabled",
   "cmake.sourceDirectory": "/home/niwciu/EMBEDDED/11_myEMBEDDEDway/2_GithubActions video tutorials/GHA_HIL/hw/NUCLEO_G071RB/cmake/stm32cubemx",

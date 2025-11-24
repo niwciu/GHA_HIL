@@ -9,16 +9,19 @@
  * 
  */
 
-#ifndef KEYPAD_H
-#define KEYPAD_H
+#ifndef _KEYPAD_H_
+#define _KEYPAD_H_
+
 #ifdef __cplusplus
-extern "C" {
-#endif  
+extern "C"
+{
+#endif /* __cplusplus */
 
 void keypad_init(void);
 void keypad_update(void);
 void update_keypad_deb_rep_timers(void);
 
 #ifdef __cplusplus
-}   
-#endif // KEYPAD_H
+}
+#endif /* __cplusplus */
+#endif /*_KEYPAD_H_ */

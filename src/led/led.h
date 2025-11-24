@@ -8,8 +8,8 @@
  * @copyright Copyright (c) 2025
  * 
  */
-#ifndef LED_H
-#define LED_H
+#ifndef _LED_H_
+#define _LED_H_
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -22,5 +22,6 @@ void disable_led(void);
 bool get_curent_LED_state(void);
 
 #ifdef __cplusplus
-}   
-#endif // LED_H
+}
+#endif /* __cplusplus */
+#endif /*_KEYPAD_H_ */

@@ -57,7 +57,7 @@
 /* External variables --------------------------------------------------------*/
 
 /* USER CODE BEGIN EV */
-extern PUSHBUTTON_TypDef *USER_BUTTON;
+
 /* USER CODE END EV */
 
 /******************************************************************************/
