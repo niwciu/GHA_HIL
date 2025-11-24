@@ -36,3 +36,4 @@ static void init_peripherals(void)
     keypad_init();
     modbus_slave_manager_init();
 }
+

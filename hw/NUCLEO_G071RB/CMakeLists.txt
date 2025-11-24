@@ -35,7 +35,7 @@ enable_language(C ASM)
 add_executable(${CMAKE_PROJECT_NAME})
 
 # Add STM32CubeMX generated sources
-add_subdirectory(cmake/stm32cubemx)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/cmake/stm32cubemx)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../lib/MODBUS modbus_build)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/../../lib/PUSHBUTTON pushbutton_build)
 
@@ -52,6 +52,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/../../src/led/led.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../src/modbus_slave/modbus_slave_manager.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../src/keypad/keypad.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../src/utils/hal_utils.c
 
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/driver_interfaces/pushbutton_GPIO_interface.c
     ${CMAKE_CURRENT_SOURCE_DIR}/Core/driver_interfaces/led_driver_interface.c
