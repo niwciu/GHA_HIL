@@ -18,14 +18,10 @@ static void init_peripherals(void);
 
 void main_app(void)
 {
-
     init_peripherals();
-
     while (1)
     {
-
         keypad_update();
-
         modbus_slave_manager_update();
     }
 }
@@ -36,4 +32,3 @@ static void init_peripherals(void)
     keypad_init();
     modbus_slave_manager_init();
 }
-

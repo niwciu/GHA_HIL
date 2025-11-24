@@ -20,3 +20,8 @@ void keypad_update(void)
     // Update the state of the pushbutton
     check_pushbutton(USER_BUTTON);
 }
+
+void update_keypad_deb_rep_timers(void)
+{
+    dec_pushbutton_deb_rep_timer(USER_BUTTON);
+}
