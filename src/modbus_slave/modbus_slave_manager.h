@@ -8,8 +8,8 @@
  * @copyright Copyright (c) 2025
  * 
  */
-#ifndef MODBUS_SLAVE_MANAGER_H
-#define MODBUS_SLAVE_MANAGER_H
+#ifndef _MODBUS_SLAVE_MANAGER_H_
+#define _MODBUS_SLAVE_MANAGER_H_
 #ifdef __cplusplus
 extern "C" {
 #endif  
@@ -18,5 +18,6 @@ void modbus_slave_manager_init();
 void modbus_slave_manager_update();
 
 #ifdef __cplusplus
-}   
-#endif // MODBUS_SLAVE_MANAGER_H
+}
+#endif /* __cplusplus */
+#endif /*_MODBUS_SLAVE_MANAGER_H_ */
