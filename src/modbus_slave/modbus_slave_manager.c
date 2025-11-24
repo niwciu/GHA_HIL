@@ -1,3 +1,14 @@
+/**
+ * @file modbus_slave_manager.c
+ * @author niwciu (niwciu@gmail.com)
+ * @brief 
+ * @version 1.0.0
+ * @date 2025-11-24
+ * 
+ * @copyright Copyright (c) 2025
+ * 
+ */
+
 #include "modbus_slave_manager.h"
 #include "modbus_slave.h"
 #include "pushbutton.h"
