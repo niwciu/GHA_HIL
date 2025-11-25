@@ -1,5 +1,7 @@
 # 📡 Running HIL Tests with GitHub Actions
 
+[logo][docs/main.png]
+
 Welcome to the **Hardware-in-the-Loop (HIL) CI/CD** tutorial project!  
 This repository contains **materials, documentation, source code**, and **examples** used in a video tutorial series about running real embedded hardware tests using **GitHub Actions**.
 
@@ -12,12 +14,18 @@ https://www.youtube.com/@MyEmbeddedWay/playlists
 
 ```
 .
-├── docs/                   # MkDocs documentation source
-├── examples/               # Example firmware & HIL scenarios
-├── scripts/                # Helper scripts for RPi / build / flashing
-├── rpi-setup/              # HIL Test Server setup instructions for Raspberry Pi
-├── .github/
+├── .github/      
 │   └── workflows/          # GitHub Actions automation pipelines
+├── docs/                   # MkDocs documentation source
+├── hw/                     # Hardware configurations for example project
+├── scripts/                # Helper scripts for RPi / build / flashing
+├── lib/                    # External librarioes used in example project
+├── src/                    # Example project source code
+├── test/
+│   ├── _config_scripts/    # Config scripts for running all project targers
+│   ├── template/           # Uint tests module tempate
+│   ├── unity/              # Unity frameowrk
+│   └── hil_tests/          # hil tests folder
 └── README.md               # You're here 🙂
 ```
 
@@ -81,16 +89,18 @@ https://niwciu.github.io/GHA_HIL/
 - Cables & power supply  
 
 ### Software
-- Raspberry Pi OS Lite  
-- GCC / G++ / CMake  
-- py-micro-hil  
-- GitHub Actions runner (cloud or self-hosted)
+- Raspberry Pi imager - https://www.raspberrypi.com/software/
+- GCC / G++ / CMake / lighttpd
+- stlink - https://github.com/stlink-org/stlink
+- py-micro-hil - https://pypi.org/project/py-micro-hil/
+- GitHub Actions runner (self-hosted)
 
 ---
 
 ## ▶ Quick Start
 
-### 1️⃣ Clone this repository
+TBD
+<!-- ### 1️⃣ Clone this repository
 ```bash
 git clone https://github.com/<your_repo>.git
 cd <your_repo>
@@ -106,13 +116,14 @@ hiltest examples/basic_blink/test_blink.py
 ```
 
 ### 4️⃣ Trigger GitHub Actions workflow  
-Push to repository → workflow flashes firmware → runs tests → uploads results.
+Push to repository → workflow flashes firmware → runs tests → uploads results. -->
 
 ---
 
 ## 🧪 Example GitHub Actions Workflow
 
-```yaml
+TBD 
+<!-- ```yaml
 name: HIL Tests
 
 on: [push, pull_request]
@@ -126,17 +137,17 @@ jobs:
         run: sudo pip install py-micro-hil
       - name: Run HIL tests on remote server
         run: hiltest -h
-```
+``` -->
 
 ---
 
 ## 🗂️ Roadmap
 
-- [ ] Publish MkDocs website  
-- [ ] Add more example test cases  
-- [ ] Add multi-device support  
-- [ ] Provide YAML workflow templates  
-- [ ] Provide advanced debugging guide  
+- [ ] Publish MkDocs website   
+- [ ] Documentation update
+- [ ] Framework test and update
+- [ ] Framework documentation update
+- [ ] Provide YAML workflow templates    
 
 ---
 
@@ -154,3 +165,12 @@ MIT or any license you choose.
 ---
 
 🎉 **Your HIL CI/CD environment is now ready to build!**
+
+---
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f4825882-e285-4e02-a75c-68fc86ff5716" alt="myEmbeddedWayBanner"><br>
+
+</p>
+
+---
