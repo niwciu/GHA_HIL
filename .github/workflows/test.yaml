@@ -1,15 +1,18 @@
 name: HIL test workflow
-on: 
+on:
     workflow_dispatch:
+
 jobs:
-    check_il_server_integration:
-        name: Check hil server integration
+    check_hil_server_integration:
+        name: Check HIL server integration
         runs-on: hilserver
         steps:
-            - name: Verify St-Link connection
+            - name: Verify ST-Link connection
               run: st-info --probe
-            - name: Verify my-micro-hil avaliability
+
+            - name: Verify my-micro-hil availability
               run: hiltest -h
-            - name: verify lighttpd valiability
+
+            - name: Verify lighttpd availability
               run: lighttpd -v
               
