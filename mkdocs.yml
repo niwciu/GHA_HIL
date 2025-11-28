@@ -1,8 +1,8 @@
-site_name: OBSERVER Embedded C Library
-site_description: Automatycznie generowana z README.md + raporty
-site_url: https://niwciu.github.io/OBSERVER/
-repo_url: https://github.com/niwciu/OBSERVER
-
+site_name: GitHub Actions for Embedded - runnign HIL tests
+site_description: Webpage with support materials for tutorials on running HIL tests using GitHub Actions.
+site_url: https://niwciu.github.io/GHA_HIL
+repo_url: https://github.com/niwciu/GHA_HIL
+site_author: niwciu
 
 theme:
   name: material
@@ -37,6 +37,7 @@ theme:
         name: Light mode
       primary: blue
       accent: deep orange
+
 markdown_extensions:
   - attr_list
   - pymdownx.emoji:
@@ -63,17 +64,17 @@ markdown_extensions:
 
 nav:
   - Home: README.md
-  - Examples info: examples/README.md
-  - Reports: reports.md
-  - Doxygen docu: doxygen/observer_lib_doc/html/index.html
+  - Test server installation: hil_server_installation_manual.md
+
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/niwciu/OBSERVER
+      link: https://github.com/niwciu/GHA_HIL
     - icon: fontawesome/solid/envelope
       link: mailto:niwciu@gmail.com
     - icon: simple/youtube
       link: https://www.youtube.com/@MyEmbeddedWay/videos
-
+plugins:
+  - search
 copyright: Copyright &copy; 2025 niwciu

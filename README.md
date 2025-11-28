@@ -1,6 +1,6 @@
 # 📡 Running HIL Tests with GitHub Actions
 
-![HIL Logo](docs/main.png)
+![HIL Logo](https://niwciu.github.io/GHA_HIL/main.png)
 
 Welcome to the **Hardware-in-the-Loop (HIL) CI/CD** tutorial project!  
 This repository contains **materials, documentation, source code**, and **examples** used in a video tutorial series about running real embedded hardware tests using **GitHub Actions**.
