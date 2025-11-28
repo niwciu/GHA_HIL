@@ -1,0 +1,21 @@
+protocols:
+  # modbus:
+  #   port: /dev/ttyUSB0
+  #   baudrate: 115200
+  #   parity: N
+  #   stop_bits: 1
+  #   timeout: 2
+
+peripherals:
+  # --- Digital I/O ---
+  # gpio:
+  #   - pin: 17
+  #     mode: out
+  #     initial: low
+  #   - pin: 18
+  #     mode: in
+
+
+
+
+

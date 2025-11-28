@@ -15,18 +15,18 @@ https://www.youtube.com/@MyEmbeddedWay/playlists
 ```
 .
 ├── .github/      
-│   └── workflows/          # GitHub Actions automation pipelines
-├── docs/                   # MkDocs documentation source
-├── hw/                     # Hardware configurations for example project
-├── scripts/                # Helper scripts for RPi / build / flashing
-├── lib/                    # External librarioes used in example project
-├── src/                    # Example project source code
+│   └── workflows/              # GitHub Actions automation pipelines
+├── docs/                       # MkDocs documentation source
+├── hw/                         # Hardware configurations for example project
+├── lib/                        # External librarioes used in example project
+├── src/                        # Example project source code
 ├── test/
-│   ├── _config_scripts/    # Config scripts for running all project targers
-│   ├── template/           # Uint tests module tempate
-│   ├── unity/              # Unity frameowrk
-│   └── hil_tests/          # hil tests folder
-└── README.md               # You're here 🙂
+│   ├── _config_scripts/        # Config scripts for running all project targers
+│   ├── template/               # Uint tests module tempate
+│   ├── unity/                  # Unity frameowrk
+│   ├── hil_tests/              # hil tests folder
+│   └── peripheras_config.yaml  # py-micro-hil framework cofiguration file
+└── README.md                   # You're here 🙂
 ```
 
 ---
