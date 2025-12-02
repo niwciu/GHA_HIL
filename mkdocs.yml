@@ -1,4 +1,4 @@
-site_name: GitHub Actions for Embedded - runnign HIL tests
+site_name: GitHub Actions for Embedded - running HIL tests
 site_description: Webpage with support materials for tutorials on running HIL tests using GitHub Actions.
 site_url: https://niwciu.github.io/GHA_HIL
 repo_url: https://github.com/niwciu/GHA_HIL
@@ -16,21 +16,17 @@ theme:
     - navigation.expand
     - navigation.footer
     - content.code.copy
-    # - content.action.edit
     - content.tabs.link
     - content.tooltips
     - content.code.annotate
     - header.autohide
     - footer.social
   palette:
-    #dark theme
     - scheme: slate  
       toggle:
         icon: material/weather-sunny
         name: Dark mode
-      # primary: green
       accent: deep purple
-    #light theme
     - scheme: default  
       toggle:
         icon: material/weather-night
@@ -63,9 +59,9 @@ markdown_extensions:
       custom_checkbox: true
 
 nav:
-  - Home: README.md
+  - Home: index.md
   - Test server installation: hil_server_installation_manual.md
-
+  - HIL fundamentals: hil_fundamentals.md
 
 extra:
   social:
@@ -75,6 +71,13 @@ extra:
       link: mailto:niwciu@gmail.com
     - icon: simple/youtube
       link: https://www.youtube.com/@MyEmbeddedWay/videos
+
 plugins:
   - search
+  - i18n:
+      default_language: en
+      languages:
+        en: English
+        pl: Polski
+
 copyright: Copyright &copy; 2025 niwciu
