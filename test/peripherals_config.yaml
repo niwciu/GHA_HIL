@@ -1,0 +1,21 @@
+peripherals:
+  gpio:
+    - pin: 22
+      mode: out
+      initial: high
+      name: NRST
+    - pin: 23
+      mode: out
+      initial: high
+      name: USER_KEY
+    - pin: 24
+      mode: in
+      name: LED_OUT_PIN
+
+protocols:
+  modbus:
+    port: /dev/ttyACM0
+    baudrate: 115200
+    parity: N
+    stopbits: 2
+    timeout: 1
