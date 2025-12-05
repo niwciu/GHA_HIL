@@ -62,6 +62,8 @@ nav:
   - Home: index.md
   - Test server installation: hil_server_installation_manual.md
   - HIL fundamentals: hil_fundamentals.md
+  - Example project description: example_project_decription.md
+  - How to use Framework: working_with_hiltest_framework.md
 
 extra:
   social:
