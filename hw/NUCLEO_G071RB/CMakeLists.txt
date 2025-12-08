@@ -21,7 +21,7 @@ cmake_minimum_required(VERSION 3.10)
 
 set(CMAKE_TOOLCHAIN_FILE ../config/STM32/Toolchain-arm-gcc.cmake)
 
-project(NUCLEO_GO71RB)
+project(NUCLEO_G071RB)
 # Allow assembler
 enable_language(ASM)
 
