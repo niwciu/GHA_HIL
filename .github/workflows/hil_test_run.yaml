@@ -1,0 +1,74 @@
+name: RUN HIL tests workflow
+on:
+    workflow_dispatch:
+    push: 
+    pull_request: 
+      branches: 
+        - main
+
+jobs:
+  build:
+    name: Build NUCLEO_G071RB
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.0
+    
+      - name: Get Arm Toolchain
+        uses: carlosperate/arm-none-eabi-gcc-action@v1
+
+      - name: Get Ninja
+        uses: seanmiddleditch/gha-setup-ninja@master 
+
+      - name: Build 
+        working-directory: hw/NUCLEO_G071RB
+        run: |
+          mkdir out
+          cmake -Bout -GNinja
+          cmake --build out
+
+      - name: Save Build Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build_files
+          path: ./hw/NUCLEO_G071RB/out
+          if-no-files-found: warn
+          retention-days: 1
+          overwrite: true
+
+  run_hil:
+    name: Run HIL tests
+    runs-on: hilserver
+    needs: build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.0
+
+      - name: Prepare build folder
+        run: rm -rf build && mkdir -p build
+              
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build_files
+          path: build
+
+      - name: Flash DUT
+        run: st-flash --reset write build/NUCLEO_G071RB.bin 0x08000000
+
+      - name: Run HIL tests on test server
+        working-directory: test
+        run: hiltest --html /var/www/html/index.html
+
+      - name: Save html report
+        uses: actions/upload-artifact@v4
+        with:
+          name: html_report
+          path: /var/www/html
+          if-no-files-found: warn
+          retention-days: 1
+          overwrite: true
+
+      
+      
+      
