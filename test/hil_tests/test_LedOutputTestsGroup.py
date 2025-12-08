@@ -37,8 +37,10 @@ def generate_long_push():
     gpio.write("USER_KEY","low")
     time.sleep(1.1) # LONG_PUSH_BUTTON_TIME
     gpio.write("USER_KEY","high")
+    time.sleep(0.1)
 
 def generate_short_push():
     gpio.write("USER_KEY","low")
     time.sleep(0.1) # SHORT_PUSH_BUTTON_TIME
     gpio.write("USER_KEY","high")
+    time.sleep(0.1) 
