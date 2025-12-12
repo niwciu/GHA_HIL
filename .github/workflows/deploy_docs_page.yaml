@@ -42,8 +42,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs-material
           pip install mkdocs-i18n
-      # - name: copy README file
-      #   run: cp README.md ./docs/README.md
+
+      - name: Get example test report
+        uses: dawidd6/action-download-artifact@v11
+        with:
+          workflow: hil_test_run.yaml
+          workflow_conclusion: success
+          name: html_report     
+          path: ./docs/html_report
 
       - name: Build MkDocs site
         run: mkdocs build --strict

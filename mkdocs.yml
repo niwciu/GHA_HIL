@@ -64,6 +64,7 @@ nav:
   - HIL fundamentals: hil_fundamentals.md
   - Example project description: example_project_decription.md
   - How to use Framework: working_with_hiltest_framework.md
+  - Example of test report: test_report/index.html
 
 extra:
   social:
